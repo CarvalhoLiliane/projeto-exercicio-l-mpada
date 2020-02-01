@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acende e Apaga lâmpada!</title>
+</head>
+<body>
+    <h1>Clique para acender a lâmpada e depois clique para apagá-la. </h1>
+
+    <img src="/imagens/apagada.jpg" alt="imagem de lâmpada apagada" id="imagem">
+    <button onclick="acenderLampada()">Clique aqui</button>
+
+    <script>
+        var lampadaAcesa = false;
+        function acenderLampada(){
+            if(!lampadaAcesa){
+            document.getElementById("imagem").src="/imagens/acesa.jpg";
+            lampadaAcesa = true;
+        }else{
+            document.getElementById('imagem').src="/imagens/apagada.jpg"
+            lampadaAcesa = false;
+        }
+    }
+        
+
+    </script>
+</body>
+</html>
